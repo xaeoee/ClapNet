@@ -1,0 +1,6 @@
+data/*
+*.mp3
+*.mp4
+*.npy
+
+.DS_Store
