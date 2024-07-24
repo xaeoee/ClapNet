@@ -1,16 +1,15 @@
 
 # Clap Detection Using CNN
 ## **I.** Description
-This project processes audio files to detect clapping sounds using Convolutional Neural Networks (CNN). Input video file will be converted into the audio files and then converted into mel-spectrograms and saved as numpy arrays for training the CNN model.
-The output will be json format file contianing metadata of video file with timestamps of clap detected.
-By using this programe, reviwer can easily find clapping which could be abnormal behaviour of ASD child.
+This project processes audio files to detect clapping sounds using Convolutional Neural Networks (CNN). The input video file will be converted into audio files, then into mel-spectrograms, and saved as numpy arrays for training the CNN model. The output will be a JSON format file containing metadata of the video file with timestamps of detected claps. By using this program, reviewers can easily identify clapping, which could indicate abnormal behavior in ASD children.
 
 ## II. Environment Set-up
 
 ### Step1. Download this python script
 Use `git clone` or directly download.
-Go to https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&dataSetSn=644 and download appropriate data(sound data for human)
-Then you can get a below hierarchy.
+Download the appropriate data (sound data for humans) from [AI Hub](https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&dataSetSn=644)
+.
+Then, you should have the following directory structure:
 ```
 CLAPNET/
 ├── data/
@@ -50,16 +49,20 @@ CLAPNET/
 ```
 
 ### Step2. Create anaconda virtual environment
+Create the environment using the 'environment.yml' file:
 ```
 conda env create -f environment.yml
 ```
 
 ### Step3. Run & test
+Run all cells in 'data_preprocessing.ipynb' to preprocess the data.
 ```
-(CLAPNET) python3 main.py --video_path video/your_video.mp4
+conda activate env  # Activate the environment
+python3 main.py --video_path video/your_video.mp4
 ```
 
 ## III. Requirements
+The following packages are required and specified in the 'environment.yml' file:
 ```
 python=3.12.4
 opencv-python==4.10.0
