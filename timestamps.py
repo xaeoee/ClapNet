@@ -21,6 +21,8 @@ def get_clap_timestamps(model_path, X_Data, timestamps):
     if final_label == 'clap':
         # Create a new list excluding timestamps where the predicted class is 'non_clap'
         timestamps = [timestamp for idx, timestamp in enumerate(timestamps) if predicted_classes[idx] != 1]
+
+        timestamps = [round(timestamp, 1) for timestamp in timestamps]
     else:
         return []    
     return timestamps
