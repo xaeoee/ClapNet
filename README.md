@@ -60,18 +60,3 @@ Run all cells in 'data_preprocessing.ipynb' to preprocess the data.
 conda activate env  # Activate the environment
 python3 main.py --video_path video/your_video.mp4
 ```
-
-## III. Requirements
-The following packages are required and specified in the 'environment.yml' file:
-```
-python=3.12.4
-opencv-python==4.10.0
-numpy==1.26.4
-tqdm==4.66.4
-librosa==0.10.2.post1
-matplotlib==3.8.4
-pandas==2.2.2
-tensorflow==2.16.2
-scikit-learn==1.4.2
-moviepy==1.0.3
-```
