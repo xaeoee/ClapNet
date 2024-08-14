@@ -1,25 +1,16 @@
-name: CLAPNET
+name: clapnet
 channels:
   - conda-forge
 dependencies:
   - python=3.12.4
-  - opencv-python=4.10.0
   - numpy=1.26.4
   - tqdm=4.66.4
   - librosa=0.10.2.post1
   - matplotlib=3.8.4
   - pandas=2.2.2
-  - tensorflow=2.16.2
   - scikit-learn=1.4.2
   - moviepy=1.0.3
   - pip
   - pip:
-    - opencv-python==4.10.0
-    - numpy==1.26.4
-    - tqdm==4.66.4
-    - librosa==0.10.2.post1
-    - matplotlib==3.8.4
-    - pandas==2.2.2
-    - tensorflow==2.16.2
-    - scikit-learn==1.4.2
-    - moviepy==1.0.3
+    - tensorflow-macos
+    - opencv-python-headless
